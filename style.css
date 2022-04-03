@@ -3,10 +3,74 @@
   font-family: 'Lato', sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+
+  --color-secondary-lighter: hsl(45deg, 100%, 50%);
+  --color-secondary-darker: hsl(45deg, 100%, 40%);
+
+  --color-black: hsl(0deg, 100%, 0%);
+  --color-very-dark: hsl(0deg, 100%, 10%);
+  --color-dark: hsl(0deg, 0%, 30%);
+  --color-medium: hsl(0deg, 0%, 40%);
+  --color-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+}
+
 /* Add styles here! */
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--color-white);
+}
+
+.intro-chunk {
+  max-width: 800px;
+  padding: 16px;
+}
+
+.intro-chunk strong {
+  color: var(--color-primary)
+}
+
+.intro-chunk p {
+  max-width: 360px;
+}
+
+.title {
+  padding: 16px 0;
+  font-size: 2rem;
+}
+
+main {
+  background-color: var(--color-light);
+  border-top: 8px solid var(--color-dark);
+  padding: 48px 0;
+}
+
+
+
+.card {
+  border-bottom: 8px solid var(--color-dark);
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.indented-heading {
+  padding: 16px;
+  background-color: var(--color-secondary-lighter);
+  border-bottom: 8px solid var(--color-secondary-darker);
+  margin-left: -24px;
+  margin-top: -8px;
+  max-width: fit-content;
+}
